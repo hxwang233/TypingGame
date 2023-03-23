@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="SDL_lab" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/SDL_lab" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add directory="D:/CLibrary/SDL-2.0/include" />
+					<Add directory="D:/CLibrary/SDL2_image/include" />
+					<Add directory="D:/CLibrary/SDL2_ttf/include" />
+					<Add directory="D:/CLibrary/SDL2_mixer/include" />
+					<Add directory="D:/CLibrary/SDL-2.0/include/SDL2" />
+				</Compiler>
+				<Linker>
+					<Add option="-lmingw32 -lSDL2main -lSDL2 -lSDL2_image -lSDL2_mixer -lSDL2_ttf" />
+					<Add directory="D:/CLibrary/SDL2_mixer/lib" />
+					<Add directory="D:/CLibrary/SDL2_image/lib" />
+					<Add directory="D:/CLibrary/SDL2_ttf/lib" />
+					<Add directory="D:/CLibrary/SDL-2.0/lib" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/SDL_lab" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add directory="D:/CLibrary/SDL-2.0/include/SDL2" />
+					<Add directory="D:/CLibrary/SDL-2.0/include" />
+					<Add directory="D:/CLibrary/SDL2_image/include" />
+					<Add directory="D:/CLibrary/SDL2_mixer/include" />
+					<Add directory="D:/CLibrary/SDL2_ttf/include" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add option="-lmingw32 -lSDL2main -lSDL2 -lSDL2_image -lSDL2_ttf -lSDL2_mixer" />
+					<Add directory="D:/CLibrary/SDL-2.0/lib" />
+					<Add directory="D:/CLibrary/SDL2_image/lib" />
+					<Add directory="D:/CLibrary/SDL2_mixer/lib" />
+					<Add directory="D:/CLibrary/SDL2_ttf/lib" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+		</Compiler>
+		<Unit filename="assign.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="draw.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="head.h" />
+		<Unit filename="load.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="move.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="utils.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
